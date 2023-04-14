@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+    font-stretch: expanded;
+}
+
+body {
+    background-color: #212a2f;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    max-width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.objects__choice {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.object {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.clicked {
+
+    border: 5px solid #3589be;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px white;
+}
+
+.scissors {
+    background: no-repeat url("../img/scissors.png") center / contain;
+    background-size: 85%;
+
+
+}
+
+.rock {
+    background: no-repeat url("../img/rock.png") center / contain;
+    background-size: 85%;
+    color: red;
+
+
+}
+
+.robot {
+    transition: 0.5s ease-in;
+}
+
+.paper {
+    background: no-repeat url("../img/paper.webp") center / contain;
+
+}
+
+.game__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.game__button-btn {
+    margin-left: 30px;
+    padding: 15px 170px;
+    border: 5px solid #3589be;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 30px;
+    color: white;
+
+}
+
+.game__button-btn:hover {
+    cursor: pointer;
+    background-color: #3589be;
+    box-shadow: 0 0 10px 10px white;
+
+}
+
+.robot__choice {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+
+
+}
+
+.robot {
+    border: 5px solid #be3545;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px white;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.11);
+    color: yellow;
+    text-align: center;
+    transition: 2s ease-in;
+}
+
+.result__text {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 15px 160px;
+}
